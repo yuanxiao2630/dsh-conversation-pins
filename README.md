@@ -2,6 +2,7 @@
 
 [![Check](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/check.yml/badge.svg)](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/check.yml)
 [![Release](https://img.shields.io/github/v/release/yuanxiao2630/dsh-conversation-pins)](https://github.com/yuanxiao2630/dsh-conversation-pins/releases)
+[![npm](https://img.shields.io/npm/v/dsh-conversation-pins)](https://www.npmjs.com/package/dsh-conversation-pins)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Pages](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/pages.yml/badge.svg)](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/pages.yml)
 
@@ -59,6 +60,14 @@ The Desktop profile is managed by the Electron app; do not use `dsh plugin --pro
 3. Choose **Install**, then **Enable now**.
 4. Fully quit and reopen DeepSeek Harness.
 
+### npm
+
+```sh
+dsh plugin --profile web add dsh-conversation-pins@0.1.4
+```
+
+For Desktop, enter **`dsh-conversation-pins@0.1.4`** in **Plugins → Add plugin**.
+
 ### Web / CLI
 
 ```sh
@@ -88,7 +97,7 @@ Git installs work without a build step because `lib/` is committed:
 dsh plugin --profile web add github:yuanxiao2630/dsh-conversation-pins
 ```
 
-Push a tag such as `v0.1.3` to let the release workflow build and attach a tarball to the GitHub release.
+Push a tag such as `v0.1.4` to let the release workflow build and attach a tarball to the GitHub release.
 
 ### Install from the plugin index
 
@@ -98,7 +107,7 @@ The repository publishes a format-1 plugin index at:
 https://yuanxiao2630.github.io/dsh-conversation-pins/index.json
 ```
 
-In DSH, enable **Custom plugin indexes** under Experimental plugins, open **Discover → Add index source**, and paste that URL. The index pins an exact release commit, so installation does not depend on the moving `main` branch.
+In DSH, enable **Custom plugin indexes** under Experimental plugins, open **Discover → Add index source**, and paste that URL. The index pins an exact npm version, so installation does not depend on the moving `main` branch.
 
 The human-readable landing page is [yuanxiao2630.github.io/dsh-conversation-pins](https://yuanxiao2630.github.io/dsh-conversation-pins/).
 

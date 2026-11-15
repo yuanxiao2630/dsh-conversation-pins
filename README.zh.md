@@ -2,6 +2,7 @@
 
 [![Check](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/check.yml/badge.svg)](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/check.yml)
 [![Release](https://img.shields.io/github/v/release/yuanxiao2630/dsh-conversation-pins)](https://github.com/yuanxiao2630/dsh-conversation-pins/releases)
+[![npm](https://img.shields.io/npm/v/dsh-conversation-pins)](https://www.npmjs.com/package/dsh-conversation-pins)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Pages](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/pages.yml/badge.svg)](https://github.com/yuanxiao2630/dsh-conversation-pins/actions/workflows/pages.yml)
 
@@ -59,6 +60,14 @@ Desktop profile 由 Electron 应用独占管理，不要使用 `dsh plugin --pro
 3. 点击 **Install**，再点 **Enable now**。
 4. 完全退出 DeepSeek Harness，重新打开。
 
+### npm
+
+```sh
+dsh plugin --profile web add dsh-conversation-pins@0.1.4
+```
+
+Desktop 在 **Plugins → Add plugin** 里填 **`dsh-conversation-pins@0.1.4`**。
+
 ### Web / CLI
 
 ```sh
@@ -88,7 +97,7 @@ dsh plugin --profile web remove dsh-conversation-pins
 dsh plugin --profile web add github:yuanxiao2630/dsh-conversation-pins
 ```
 
-推送 `v0.1.3` 这样的 tag，release workflow 会构建并把 tarball 附到 GitHub Release。
+推送 `v0.1.4` 这样的 tag，release workflow 会构建并把 tarball 附到 GitHub Release。
 
 ### 通过插件索引安装
 
@@ -98,7 +107,7 @@ dsh plugin --profile web add github:yuanxiao2630/dsh-conversation-pins
 https://yuanxiao2630.github.io/dsh-conversation-pins/index.json
 ```
 
-在 DSH 里启用实验性插件 **Custom plugin indexes**，打开 **Discover → Add index source**，粘贴上面的 URL。索引固定到准确的 release commit，不依赖会移动的 `main` 分支。
+在 DSH 里启用实验性插件 **Custom plugin indexes**，打开 **Discover → Add index source**，粘贴上面的 URL。索引固定到准确的 npm 版本，不依赖会移动的 `main` 分支。
 
 可读页面：[yuanxiao2630.github.io/dsh-conversation-pins](https://yuanxiao2630.github.io/dsh-conversation-pins/)。
 

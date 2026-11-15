@@ -65,11 +65,10 @@
       "versions": [
         {
           "version": "0.1.4",
-          "publishTimestamp": 1794547371,
+          "publishTimestamp": 1794725563,
           "source": {
-            "type": "git",
-            "url": "https://github.com/yuanxiao2630/dsh-conversation-pins.git",
-            "commit": "27075732cb5bb4a7064e360a7ecc6840470fde80"
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
           },
           "engines": {
             "dsh": ">=0.2.0 <0.3.0"

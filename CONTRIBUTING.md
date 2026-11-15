@@ -36,19 +36,27 @@ Do not commit `node_modules`, packed tarballs, personal paths, or session data.
 
 ## Releasing and updating the plugin index
 
-`docs/index.json` is the public Discover index. Its first version pins a release by commit, not by tag:
+`docs/index.json` is the public Discover index. It installs the exact npm package version, not a moving branch:
 
 1. Bump `package.json`, update `CHANGELOG.md`, rebuild and commit `lib/client.js`.
 2. Tag and push the release (`git tag vX.Y.Z && git push origin vX.Y.Z`).
-3. Read the release commit and timestamp:
+3. Publish the package:
 
    ```sh
-   git rev-parse vX.Y.Z^{commit}
-   git show -s --format=%ct vX.Y.Z
+   npm publish --registry=https://registry.npmjs.org/ --access public
    ```
 
-4. Update `docs/index.json` with that version, commit, and `publishTimestamp`.
+4. Read the npm publish time and update `docs/index.json` `version` and `publishTimestamp`.
+   The source is:
+
+   ```json
+   "source": {
+     "type": "npm",
+     "registry": "https://registry.npmjs.org/"
+   }
+   ```
+
 5. Commit the index update and push `main`. The Pages workflow deploys it to
    `https://yuanxiao2630.github.io/dsh-conversation-pins/index.json`.
 
-The index installs the exact commit in `source.commit`; never point it at a moving branch.
+The index version must match the npm `latest` version; never point it at a moving branch.
