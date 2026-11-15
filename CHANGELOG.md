@@ -6,6 +6,7 @@ All notable changes to this plugin are documented here.
 
 - Update repository, Pages, and plugin-index URLs after the GitHub account rename.
 - Publish the format-1 Discover index and landing page.
+- Publish `dsh-conversation-pins@0.1.4` on npm.
 
 ## 0.1.3
 

@@ -56,7 +56,7 @@
 Desktop profile 由 Electron 应用独占管理，不要使用 `dsh plugin --profile desktop`。
 
 1. 打开 **Plugins → Add plugin**。
-2. 填入本仓库的本地路径、tarball，或发布后的 GitHub 地址。
+2. 填入 `dsh-conversation-pins@0.1.4`、本地路径、tarball，或 GitHub 地址。
 3. 点击 **Install**，再点 **Enable now**。
 4. 完全退出 DeepSeek Harness，重新打开。
 

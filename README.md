@@ -56,7 +56,7 @@ Conversation Pins is a **DeepSeek Harness Web / Desktop client plugin**. It adds
 The Desktop profile is managed by the Electron app; do not use `dsh plugin --profile desktop`.
 
 1. Open **Plugins → Add plugin**.
-2. Enter this repository's local path, a tarball path, or its GitHub address after you publish it.
+2. Enter `dsh-conversation-pins@0.1.4`, a local path, a tarball path, or the GitHub address.
 3. Choose **Install**, then **Enable now**.
 4. Fully quit and reopen DeepSeek Harness.
 
