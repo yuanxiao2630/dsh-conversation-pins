@@ -48,7 +48,7 @@ Install it in DSH:
 dsh plugin --profile web add dsh-conversation-pins@0.1.4
 ```
 
-After the first npm release, `docs/index.json` can switch the version source from Git to npm:
+After the first npm release, `docs/index.json` uses the npm version source:
 
 ```json
 "source": {
